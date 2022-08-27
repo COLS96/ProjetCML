@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   	<head>
+       <title>
+          Trapeze
+        </title>
+	</head>
+
+	<body>
+
+		<canvas id="canvas1" width="600" height="400">
+		</canvas>
+
+		<script>
+			var canvas = document.getElementById('canvas1');
+			var context = canvas.getContext('2d');
+
+			context.beginPath();
+			context.strokeStyle="black";
+			context.moveTo(150,50);
+			context.lineTo(450,50);
+			context.lineTo(500,200);
+			context.lineTo(100,200);
+			context.fillStyle = "purple";
+			context.fill();
+			context.closePath();
+			context.stroke();
+		</script>
+
+	</body>
+
+</html>
